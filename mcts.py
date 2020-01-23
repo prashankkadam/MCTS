@@ -90,7 +90,7 @@ class MCTS:
             reward = 1 - reward  # 1 for me is 0 for my enemy
 
 
-    def uct_select(self, node):
+    def _uct_select(self, node):
         "Select a child of the node balancing exploration and exploitation"
 
         # All the children of the node should already be expanded
